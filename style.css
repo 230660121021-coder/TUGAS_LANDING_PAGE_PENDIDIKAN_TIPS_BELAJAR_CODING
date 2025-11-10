@@ -292,11 +292,11 @@ body {
     align-items: center;
     gap: 3rem;
     margin-bottom: 5rem;
-    padding: 2rem; /* Tambahkan padding agar ada ruang untuk bayangan dan efek hover */
+    padding: 2rem;
     border-radius: 12px;
-    background-color: var(--bg-light); /* Pastikan ada background agar box-shadow terlihat */
+    background-color: var(--bg-light); 
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer; /* Menunjukkan bahwa ini interaktif */
+    cursor: pointer; 
 }
 
 .tip-item.reverse {
@@ -311,20 +311,17 @@ body {
     order: 1;
 }
 
-/* Efek hover pada seluruh tip-item */
 .tip-item:hover {
-    transform: translateY(-10px); /* Naik sedikit */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
 }
 
 .tip-image {
     border-radius: 8px;
     overflow: hidden;
-    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); Hapus shadow di sini, pindah ke tip-item */
     aspect-ratio: 4 / 3; 
     background-color: #f0f2f5; 
     position: relative;
-    /* transition: transform 0.4s ease, box-shadow 0.4s ease; Hapus transition di sini */
 }
 
 .tip-image img {
@@ -347,7 +344,6 @@ body {
     transition: opacity 0.4s ease;
 }
 
-/* Efek pada gambar dan overlay saat tip-item di-hover */
 .tip-item:hover .tip-image::after {
     opacity: 1;
 }
@@ -655,4 +651,5 @@ body {
     .social-links {
         justify-content: center;
     }
+
 }
